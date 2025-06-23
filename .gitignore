@@ -28,10 +28,4 @@ dist-ssr
 *.vbproj.user
 *.jfm
 
-# OS generated files
-.DS_Store
-Thumbs.db
 
-# VS Code remote development
-.vscode-server
-.vscode-insiders
