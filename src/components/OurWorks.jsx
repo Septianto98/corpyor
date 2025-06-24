@@ -1,34 +1,40 @@
 import { useScroll, motion, useTransform } from "framer-motion";
 import { useRef } from "react";
+import work1 from "../assets/work01.webp";
+import work2 from "../assets/work02.webp";
+import work3 from "../assets/work03.webp";
+import work4 from "../assets/work04.webp";
+import work5 from "../assets/work05.webp";
+import arrowbiru from "../assets/bluearrow.svg";
 
 const dataWorks = [
   {
     id: 1,
-    imageSource: "/src/assets/work01.webp",
+    imageSource: work1,
     name: "Mbohkelalen",
     detailWork: "Branding, Digital Marketing",
   },
   {
     id: 2,
-    imageSource: "/src/assets/work02.webp",
+    imageSource: work2,
     name: "Jajanmie",
     detailWork: "Branding, Digital Marketing",
   },
   {
     id: 3,
-    imageSource: "/src/assets/work03.webp",
+    imageSource: work3,
     name: "Bakmitul",
     detailWork: "Branding, Digital Marketing",
   },
   {
     id: 4,
-    imageSource: "/src/assets/work04.webp",
+    imageSource: work4,
     name: "Sukidesuu",
     detailWork: "Web Design & Development",
   },
   {
     id: 5,
-    imageSource: "/src/assets/work05.webp",
+    imageSource: work5,
     name: "Kesapian",
     detailWork: "Digital Marketing",
   },
@@ -42,7 +48,7 @@ const OurWorks = () => {
   });
 
   const x = useTransform(scrollYProgress, [0, 1], ["8%", "-75%"]);
-  const opacity = useTransform(scrollYProgress, [0.5, 1], ["100%", "0%"]);
+  const opacity = useTransform(scrollYProgress, [0, 1], ["100%", "0%"]);
 
   return (
     <section
@@ -60,11 +66,7 @@ const OurWorks = () => {
           <button className=" flex font-inter text-base cursor-pointer text-primary">
             Select all works
           </button>
-          <img
-            src="/src/assets/bluearrow.svg"
-            loading="lazy"
-            className="size-5 md:size-6"
-          />
+          <img src={arrowbiru} loading="lazy" className="size-5 md:size-6" />
         </div>
       </motion.div>
       <div className="sticky top-0 flex h-screen w-full -z-1 items-center overflow-hidden">
@@ -81,7 +83,7 @@ const OurWorks = () => {
 const Card = ({ card }) => {
   return (
     <div className="relative flex flex-col h-fit md:max-h-fit justify-center pt-32 md:pt-30 hover:scale-99 hover:rounded-lg hover:opacity-100 hover:text-primary cursor-pointer ">
-      <div className="relative h-[500px] w-[340px] md:w-[324px] md:h-[504px] mb-2 ">
+      <div className="relative h-[340px] w-[250px] md:w-[324px] md:h-[504px] mb-2 ">
         <div className="absolute inset-0 rounded-sm bg-[#1a1a1a]/10 hover:opacity-0" />
         <img
           loading="lazy"

@@ -4,6 +4,11 @@ import Hamburger from "../assets/iconhamburger.svg";
 import HamburgerBiru from "../assets/iconhamburgerbiru.svg";
 import IconCloseBiru from "../assets/iconclosebiru.svg";
 import IconClose from "../assets/iconclose.svg";
+import arrow from "../assets/arrow.svg";
+import logobiru from "../assets/bluelogo.svg";
+import logoputih from "../assets/logoputih.svg";
+import logomobilebiru from "../assets/logomobilebiru.svg";
+import logomobileputih from "../assets/logomobileputih.svg";
 
 const navItems = ["About", "Services", "Works", "Career"];
 
@@ -45,8 +50,13 @@ const Navbar = () => {
         <nav className="flex size-full items-center justify-between px-4 md:px-30">
           <img
             loading="lazy"
-            src={`${scrollPosition ? "/src/assets/bluelogo.svg" : "/src/assets/logoputih.svg"}`}
-            className="cursor-pointer"
+            src={`${scrollPosition ? logobiru : logoputih}`}
+            className="hidden md:block cursor-pointer"
+          />
+          <img
+            loading="lazy"
+            src={`${scrollPosition ? logomobilebiru : logomobileputih}`}
+            className="block md:hidden cursor-pointer"
           />
           {/* Dekstop Nav */}
           <div className="flex items-center  ">
@@ -64,7 +74,7 @@ const Navbar = () => {
               <Button
                 paddingx="px-6"
                 title="Let's Talk"
-                icon="/src/assets/arrow.svg"
+                icon={arrow}
                 bgcolor="bg-primary"
                 textcolor="text-white"
               />
@@ -94,7 +104,7 @@ const Navbar = () => {
                   <Button
                     paddingx="w-full"
                     title="Let's Talk"
-                    icon="/src/assets/arrow.svg"
+                    icon={arrow}
                     bgcolor="bg-primary"
                     textcolor="text-white"
                   />

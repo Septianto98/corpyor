@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import arrow1 from "../assets/arrowellipse.svg";
 
 const DetailServices = ({ dataServices, onClick, isOpen }) => {
   return (
@@ -11,13 +12,13 @@ const DetailServices = ({ dataServices, onClick, isOpen }) => {
           initial={{ y: 48, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ ease: "easeInOut", duration: 0.75, delay: 0.2 }}
-          className="text-lg text-blackbase md:text-xl leading-[140%] md:leading-[130%] tracking-lg md:tracking-xl font-inter"
+          className="text-lg font-inter leading-[140%] tracking-lg text-blackbase md:text-xl] md:leading-[130%]  md:tracking-xl"
         >
           {dataServices.service}
         </motion.h3>
         <img
           loading="lazy"
-          src="/src/assets/arrowellipse.svg"
+          src={arrow1}
           className={`ease-in-out duration-300 ${isOpen ? "rotate-45" : "rotate-0"}`}
         />
       </div>

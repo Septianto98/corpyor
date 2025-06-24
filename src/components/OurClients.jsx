@@ -1,15 +1,14 @@
 import { motion } from "framer-motion";
+import logo1 from "../assets/logo01.svg";
+import logo2 from "../assets/logo02.svg";
+import logo3 from "../assets/logo03.svg";
+import logo4 from "../assets/logo04.svg";
+import logo5 from "../assets/logo05.svg";
+import logo6 from "../assets/logo06.svg";
+import logo7 from "../assets/logo07.svg";
 
 const OurClients = () => {
-  const logoClients = [
-    "/src/assets/logo01.svg",
-    "/src/assets/logo02.svg",
-    "/src/assets/logo03.svg",
-    "/src/assets/logo04.svg",
-    "/src/assets/logo05.svg",
-    "/src/assets/logo06.svg",
-    "/src/assets/logo07.svg",
-  ];
+  const logoClients = [logo1, logo2, logo3, logo4, logo5, logo6, logo7];
 
   return (
     <div className="relative h-fit w-screen px-4 md:px-30 py-20 md:pt-20 md:pb-30 bg-white">

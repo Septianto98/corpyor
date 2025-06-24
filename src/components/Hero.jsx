@@ -65,7 +65,7 @@ const SocialProof = (props) => {
       <div className="relative flex flex-col">
         <div className="relative flex justify-start items-center gap-2">
           <img src={props.src} loading="lazy" />
-          <span className="font-inter text-base leading-[150%] text-whitebase">
+          <span className="font-inter text-sm md:text-base leading-[150%] text-whitebase">
             {props.jumlah}
           </span>
         </div>

@@ -5,6 +5,7 @@ import iclinked from "../assets/iconlinkedin.svg";
 import icig from "../assets/iconig.svg";
 import icx from "../assets/iconx.svg";
 import icfacebook from "../assets/iconfb.svg";
+import logobiru from "../assets/bluelogo.svg";
 
 const Footer = () => {
   return (
@@ -19,7 +20,7 @@ const Footer = () => {
             <span className="font-inter text-base text-primary leading-[150%]">
               Ready to Grow?
             </span>
-            <h1 className="text-xl md:w-[882px] tracking-xl leading-[130%] md:text-2xl font-inter md:tracking-2xl md:leading-[120%] text-primary">
+            <h1 className="text-lg md:w-[882px] tracking-lg leading-[130%] md:text-2xl font-inter md:tracking-2xl md:leading-[120%] text-primary">
               Let's talk smart strategy for your digital growth
             </h1>
           </div>
@@ -68,10 +69,10 @@ const Footer = () => {
               Office
             </span>
             <div className="flex flex-col gap-2 pb-5">
-              <p className="font-inter text-base text-primary leading-[150%] font-light w-[219px]">
+              <p className="font-inter text-base text-primary leading-[150%] font-light w-[200px]">
                 Ichiban Kakoii. No 50. 1F Bumi Serong Dikit, Tangerang
               </p>
-              <p className="font-inter text-base text-primary leading-[150%] font-light w-[254px]">
+              <p className="font-inter text-base text-primary leading-[150%] font-light w-[200px]">
                 Ichiban Kawaii. No 48. 2F Cicilelebedug, Tangerang Selatan
               </p>
             </div>
@@ -86,14 +87,14 @@ const Footer = () => {
             </div>
           </div>
           {/* logo */}
-          <div className="flex w-full pt-20 md:pt-0 justify-start md:justify-end items-start">
-            <img src="../src/assets/bluelogo.svg" loading="lazy" />
+          <div className="flex w-full pt-20 md:pt-0 -ml-5 md:ml-0 justify-start md:justify-end items-start">
+            <img src={logobiru} loading="lazy" />
           </div>
         </div>
 
         {/* copyright */}
         <div className="relative w-full h-fit px-4 md:px-30">
-          <div className="flex justify-start md:justify-end items-center gap-5">
+          <div className="flex flex-wrap md:flex-nowrap justify-start md:justify-end items-center gap-5">
             <a
               href=""
               className="cursor-pointer text-xs leading-[150%] text-primary/80"

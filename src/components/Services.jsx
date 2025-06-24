@@ -1,5 +1,6 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
 import DetailServices from "./DetailServices";
+import img4 from "../assets/image4.webp";
 
 const dataServices = [
   {
@@ -41,9 +42,9 @@ const Services = () => {
     items-center justify-center px-4 md:px-30 py-10 md:py-20 overflow-x-hidden"
     >
       <img
-        src="../src/assets/image4.webp"
+        src={img4}
         loading="lazy"
-        className="w-[391px] h-[341px] object-fill"
+        className="w-full h-full md:w-[391px] md:h-[341px] object-cover"
       />
       <div className="w-full h-full bg-white px-10 py-10 rounded-2xl">
         {dataServices.map((d, index) => {
